@@ -53,6 +53,14 @@ async function init() {
 	if (insightsTab) {
 		insightsTab.remove();
 	}
+	const summary = select('.overall-summary');
+	if (summary) {
+		summary.remove();
+	}
+	const graph = select('.repository-lang-stats-graph');
+	if (graph) {
+		graph.remove();
+	}
 }
 
 features.add({
